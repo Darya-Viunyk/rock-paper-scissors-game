@@ -10,6 +10,9 @@ public class HumanPlayer implements Player{
         this.name = name;
         this.scanner = new Scanner(System.in);
     }
+
+
+
     @Override
     public String getName(){
         return name;

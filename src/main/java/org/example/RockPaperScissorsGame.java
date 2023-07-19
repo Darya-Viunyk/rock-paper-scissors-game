@@ -11,7 +11,6 @@ package org.example;
 
 
 
-
   public void play(){
    Move move1 = player1.getMove();
    Move move2 = player2.getMove();

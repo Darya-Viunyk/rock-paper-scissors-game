@@ -1,6 +1,6 @@
 package org.example;
 
  interface Player {
-     String getName();
-     Move getMove();
+     String name();
+     Move move();
 }

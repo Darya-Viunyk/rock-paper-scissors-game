@@ -1,21 +1,22 @@
 package org.example;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class HumanPlayer implements Player{
     private String name;
     private Scanner scanner;
 
-    public HumanPlayer (String name){
+    public HumanPlayer (String name, InputStream inputStream){
         this.name = name;
-        this.scanner = new Scanner(System.in);
+        this.scanner = new Scanner(inputStream);
     }
     @Override
-    public String getName(){
+    public String name(){
         return name;
     }
     @Override
-    public Move getMove(){
+    public Move move(){
         while (true){
             System.out.print("Enter your move (rock/paper/scissors):");
             String input = scanner.nextLine().toLowerCase();

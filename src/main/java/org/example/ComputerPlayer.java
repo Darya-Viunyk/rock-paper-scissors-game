@@ -11,11 +11,11 @@ public class ComputerPlayer implements Player {
         this.random = new Random();
     }
     @Override
-    public String getName(){
+    public String name(){
         return name;
     }
     @Override
-    public Move getMove(){
+    public Move move(){
         int randomIndex = random.nextInt(3);
         if (randomIndex == 0){
             return new Rock();
